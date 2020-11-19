@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 4-4</title>
+    <script>
+        // var avg = eval("(10+5+6)/3");
+        // console.log(avg)
+
+        var num = prompt("숫자를 입력하세요");
+        
+        //isNan() 은 숫자가 아니면 true
+        if (isNaN(num) == true){
+            //숫자가 아닐 때
+            console.log("숫자가 입력되지 않았습니다.");
+        }
+        else {
+            num = parseInt(num);
+            num = Number(num);
+            console.log(num*num);
+        }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
