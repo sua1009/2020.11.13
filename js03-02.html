@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 3-2</title>
+    <script>
+        // 반복문 
+        // for( for ~in), while, do ~ while
+        // 자바스크립트에서 특정한 코드블럭을 반복적으로 실행할 때 사용하는 명령어
+        // for 문 : 반복 조건이 거짓으로 판단될 때까지 코드블럭을 반복 실행하는 반복문
+        // for (초기화 변수; 반복조건; 증감식)까지 한곳에 입력하여 설정하는 방식 
+        // {
+        //      반복 실행될 소스코드;
+        // }
+       
+        for (var i = 0; i < 10; i++){
+            console.log(i);
+        }
+
+        console.log ("-------------------------");
+
+        var result = 0;
+        for (var i = 0; i <= 10; i++){
+            result += i;
+        }
+
+        console.log(result);
+
+       
+
+        for(var size = 10; size <=35; size +=5){
+            document.write ("<span style='font-size:"+ size +"px'>");
+            document.write (size + "px");
+            document.write ("</span>");
+        }
+        document.write();
+
+        var dan = 5;
+        for (var i = 1; i < 10; i ++){
+            console.log(dan +"*" + i + "=" + (dan*i));
+        }
+
+        console.log ("----------------------------------------------")
+
+        // 문제 2 ) 사용자 입력을 통해서 원하는 단수의 구구단을 출력하세요
+
+        // 문제 3 ) 아래의 형태를 출력하는 프로그램을 작성하세요 
+        //for 문을 사용하여 출력하세요 
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        var dan = 9;
+        for ( var i = 1; i <10 ; i ++){
+            console.log (dan + " * " + i + " = "+ (dan*i));
+        }
+        console.log("=====================================문제 3")
+
+        //var result; // undefined 타입하고 연산을 진행할 경우 오류가 발생할 가능성이 높음 
+        document.write(); //변수 result 에 빈 문자열이 저장되면서 데이터 자체는 비어있지만 변수의 타입이 문자열 타입으로 변경됨
+
+        var result = "";
+        for ( var i = 1; i <=5 ;i ++){
+          result= result + "*"
+          console.log(result);
+        }
+       
+
+
+    </script>
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

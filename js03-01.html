@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 3-1</title>
+<script>
+    var fruits = "사과";
+    var price = 0;
+
+    switch (fruits){
+
+        case "바나나":
+        price = 200;
+        break;
+
+        case "사과":
+        price = 300;
+        break;
+
+        case "체리":
+        price = 400;
+        break;
+
+        default:
+        //else if 문의 else문과 동일,  생략가능 (모든 case를 다 입력 시 ) case에 원하는 것이 없을 경우 실행 
+        console.log("팔지 않습니다.");
+        price = 0;
+    }
+    console.log(price);
+
+    console.log("-------------------------------------")
+
+    fruits = "사과";
+    price = 0;
+
+    if (fruits=="바나나"){
+        price = 200;
+    }
+
+    else if (fruits=="사과"){
+        price=300;
+    }
+
+    else if (fruits=="체리"){
+        price=400;
+    }
+    else {
+        price = 0;
+        console.log("팔지 않습니다.");
+    }
+    console.log(price);
+
+    console.log("-----------------------------------");
+
+    var day = new Date().getDay();
+    //오늘 날짜를 숫자로 표현하는 함수, 월요일부터 1, getDay 는 오늘 날짜를 반영
+    var toDay = "";
+
+    switch (day){
+        case 1:
+        toDay = "월요일";
+        break;
+
+        case 2:
+        toDay = "화요일";
+        break;
+
+        case 3:
+        toDay = "수요일";
+        break;
+
+        case 4:
+        toDay = "목요일";
+        break;
+
+        case 5:
+        toDay = "금요일";
+        break;
+
+        case 6:
+        toDay = "주말";
+        break;
+    }
+
+console.log("오늘은 "+toDay+"입니다.");
+
+//문제 1) 위의 요일 입력하는 부분을 사용자가 날짜를 입력하면 해당하는 요일이 추력되는 프로그램을 작성핫요
+//else if 문으로 작성하세요
+//사용자 입력 방식 "2020-11-17"
+
+
+inputDay = prompt("날짜를 입력하세요", "2020-xx-xx");
+var day = new Date(inputDay).getDay();
+var toay = "";
+
+if (day==1){
+    today= "월요일";
+}
+else if (day == 2){
+    today = "화요일";
+}
+else if (day == 3){
+    today = "수요일";
+}
+else if (day == 4){
+    today = "목요일";
+}
+else if (day == 5){
+    today = "금요일";
+}
+else {
+    today = "주말";
+}
+console.log(inputDay+"오늘은" + today +"입니다.")
+
+
+console.log("================같은문제 다른방식===============")
+
+
+var day = new Date(prompt("날짜를 입력하세요")).getDay();
+
+
+if ( day ==1) {
+    console.log("오늘은 월요일 입니다.");
+}
+else if (day ==2){
+    console.log("오늘은 화요일 입니다.");
+}
+else if (day ==3){
+    console.log("오늘은 수요일 입니다.");
+}
+else if (day ==4){
+    console.log("오늘은 목요일 입니다.");
+}
+else if (day ==5){
+    console.log("오늘은 금요일 입니다.");
+}
+else {
+    console.log("오늘은 주말 입니다.");
+}
+
+        
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
